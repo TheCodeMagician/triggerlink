@@ -1,0 +1,89 @@
+/**
+ * Triggerlink demopage css
+ */
+
+/* extend normalize, global demopage theme */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	background-color: #ece8e0;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
+/* page- elements */
+.page-wrapper {
+
+}
+
+.page-header {
+	height: 50px;
+	line-height: 50px;
+	text-align: right;
+	background-color: #545454;
+}
+	.page-header a {
+		display: inline-block;
+		margin-left: 15px;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 300;
+		text-decoration: none;
+	}
+
+
+.page-rows .page-row {
+	margin-top: 40px;
+}
+.page-rows .page-row:first-child {
+	margin-top: 0;
+}
+
+.page-center {
+	max-width: 670px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page-intro {
+	position: relative;
+	padding: 40px 0;
+	color: #ffffff;
+	background-color: #00b099;
+}
+.page-intro:after {
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 25px 0 25px;
+	border-color: #00b099 transparent transparent transparent;
+}
+	.page-intro p {
+		font-size: 18px;
+		font-weight: 300;
+	}
+
+.page-footer {
+	background-color: #34495e;
+}
+
+/* sticky footer */
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: -300px; 
+}
+.page-wrapper:after {
+  content: '';
+  display: block;
+}
+.page-footer, .page-wrapper:after {
+  height: 300px; 
+}
